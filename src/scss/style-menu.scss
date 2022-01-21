@@ -161,7 +161,7 @@ header {
   height: 10em;
   background-color: #f8f9fa;
 
-  @media (mac-width: 700px) {
+  @media (max-width: 700px) {
     flex-direction: column;
   }
 

@@ -13,6 +13,10 @@ html {
 .container {
   padding: 5rem 15rem 15rem 15rem;
 
+  @media (max-width: 700px) {
+    padding: 3rem;
+  }
+
   & .desc__tittle {
     font-size: 40px;
     letter-spacing: 10px;
@@ -22,6 +26,7 @@ html {
   & .desc__p1 {
     font-size: 20px;
   }
+
   & .desc__p2 {
     font-size: 16px;
   }
@@ -44,7 +49,7 @@ html {
     background-color: #eff1ef;
     margin: 6px;
     @media screen and (min-width: 700px) {
-      width: 49%;
+      width: 45%;
     }
   }
   &__tittle {
@@ -81,7 +86,7 @@ header {
   height: 10em;
   background-color: #f8f9fa;
 
-  @media (mac-width: 700px) {
+  @media (max-width: 700px) {
     flex-direction: column;
   }
 
