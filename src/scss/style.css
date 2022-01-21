@@ -1,0 +1,190 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* header, logo +navigation*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10em;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+header .header_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10em;
+  height: 10em;
+  background-image: url("/img/logo.svg");
+  background-repeat: no-repeat;
+  margin-left: 15em;
+}
+
+header .header_navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 15em;
+}
+
+header .header_navigation .header_navigation--list {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 16px;
+  color: black;
+}
+
+header .header_navigation .header_navigation--list:hover {
+  color: blue;
+}
+
+/*part with titles + main image*/
+.box-tittles-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
+.box-tittles-image h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.box-tittles-image h2 {
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 0;
+}
+
+.box-tittles-image .home-image {
+  background-image: url("/img/counter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 30em;
+}
+
+/* part with the main info under the image*/
+.box-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: 15em;
+  margin-left: 15em;
+}
+
+.box-info h1 {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.box-info h2 {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.box-info .opening-hours,
+.box-info .book-table,
+.box-info .address {
+  padding: 1em 5em 1em 0em;
+}
+
+/* map part*/
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 15em;
+  margin-right: 15em;
+  height: 20em;
+}
+
+/* footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #343a40;
+}
+
+footer .footer-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30em;
+  margin-top: 6em;
+}
+
+footer .footer-navigation a {
+  color: #147ecd;
+  font-size: 16px;
+}
+
+footer .footer-navigation a:hover {
+  color: white;
+}
+
+footer h2 {
+  font-size: 20px;
+  color: white;
+  position: relative;
+  top: 1.7em;
+}
+
+footer p {
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  margin-bottom: 4em;
+}
+
+footer p > a {
+  color: #147ecd;
+}
+/*# sourceMappingURL=style.css.map */

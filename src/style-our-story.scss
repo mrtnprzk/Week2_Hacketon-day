@@ -7,8 +7,6 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-/* header, logo +navigation*/
-
 header {
   display: flex;
   justify-content: space-between;
@@ -33,78 +31,26 @@ header {
       text-decoration: none;
       padding: 1rem;
       font-size: 16px;
-      color: black;
-
-      &:hover {
-        color: blue;
-      }
     }
   }
 }
 
-/*part with titles + main image*/
-
-.box-tittles-image {
-  display: flex;
-  flex-direction: column;
+.our-story {
+  height: 16em;
   margin-left: 15em;
   margin-right: 15em;
 
   h1 {
     font-size: 40px;
     font-weight: 100;
+    text-align: center;
   }
-  h2 {
-    font-size: 32px;
-    font-weight: 100;
-    line-height: 0;
-  }
-
-  .home-image {
-    background-image: url("/img/counter.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    height: 30em;
-  }
-}
-
-/* part with the main info under the image*/
-
-.box-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-right: 15em;
-  margin-left: 15em;
-
-  h1 {
-    font-size: 24px;
-    font-weight: 100;
-  }
-  h2 {
+  p {
     font-size: 16px;
     font-weight: 100;
-  }
-  .opening-hours,
-  .book-table,
-  .address {
-    padding: 1em 5em 1em 0em;
+    text-align: center;
   }
 }
-
-/* map part*/
-
-.map {
-  display: flex;
-  justify-content: center;
-  margin-left: 15em;
-  margin-right: 15em;
-  height: 20em;
-}
-
-/* footer*/
 
 footer {
   display: flex;
@@ -123,10 +69,6 @@ footer {
     a {
       color: #147ecd;
       font-size: 16px;
-
-      &:hover {
-        color: white;
-      }
     }
   }
   h2 {
