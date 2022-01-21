@@ -35,7 +35,7 @@ p {
   margin: 3em;
 
   @media (min-width: 700px) {
-    margin: 0 15em;
+    margin: 3em 15em;
   }
 
   &__cofee {
@@ -130,4 +130,117 @@ p {
 .price {
   display: flex;
   justify-content: space-between;
+}
+
+.image {
+  display: flex;
+  position: relative;
+  margin-top: 35rem;
+
+  @media (max-width: 700px) {
+    margin-top: 12rem;
+  }
+}
+
+img {
+  width: 100%;
+  padding: 0 15rem;
+  position: absolute;
+  bottom: -3rem;
+
+  @media (max-width: 700px) {
+    padding: 0 3em;
+  }
+}
+
+// Nav bar and footer
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10em;
+  background-color: #f8f9fa;
+
+  @media (mac-width: 700px) {
+    flex-direction: column;
+  }
+
+  .header_logo {
+    width: 10em;
+    height: 10em;
+    background-image: url("/img/logo.svg");
+    background-repeat: no-repeat;
+    margin-left: 15em;
+  }
+  .header_navigation {
+    margin-right: 15em;
+
+    @media (max-width: 700px) {
+      flex-direction: row;
+    }
+
+    .header_navigation--list {
+      text-decoration: none;
+      padding: 1rem;
+      font-size: 16px;
+    }
+  }
+
+  a {
+    color: #3f3f3f;
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+}
+
+footer {
+  display: flex;
+  height: 20em;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+
+  .footer-navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 30em;
+    margin-top: 6em;
+
+    a {
+      color: #147ecd;
+      font-size: 16px;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 1.7em;
+  }
+
+  p {
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 4em;
+  }
+
+  p > a {
+    color: #147ecd;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
 }

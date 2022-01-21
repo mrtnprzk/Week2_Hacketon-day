@@ -1,4 +1,162 @@
-h1 {
-  color: red;
-  font-size: 50px;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*part with titles + main image*/
+
+.box-tittles-image {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15em;
+  margin-right: 15em;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 100;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 0;
+  }
+
+  .home-image {
+    background-image: url("/img/counter.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 30em;
+  }
+}
+
+/* part with the main info under the image*/
+
+.box-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 15em;
+  margin-left: 15em;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 100;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .opening-hours,
+  .book-table,
+  .address {
+    padding: 1em 5em 1em 0em;
+  }
+}
+
+/* map part*/
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin-left: 15em;
+  margin-right: 15em;
+  height: 20em;
+}
+
+// Nav bar and footer
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10em;
+  background-color: #f8f9fa;
+
+  @media (mac-width: 700px) {
+    flex-direction: column;
+  }
+
+  .header_logo {
+    width: 10em;
+    height: 10em;
+    background-image: url("/img/logo.svg");
+    background-repeat: no-repeat;
+    margin-left: 15em;
+  }
+  .header_navigation {
+    margin-right: 15em;
+
+    @media (max-width: 700px) {
+      flex-direction: row;
+    }
+
+    .header_navigation--list {
+      text-decoration: none;
+      padding: 1rem;
+      font-size: 16px;
+    }
+  }
+
+  a {
+    color: #3f3f3f;
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+}
+
+footer {
+  display: flex;
+  height: 20em;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+
+  .footer-navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 30em;
+    margin-top: 6em;
+
+    a {
+      color: #147ecd;
+      font-size: 16px;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 1.7em;
+  }
+
+  p {
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 4em;
+  }
+
+  p > a {
+    color: #147ecd;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
 }

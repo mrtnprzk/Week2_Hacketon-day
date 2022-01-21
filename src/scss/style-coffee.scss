@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 2.5rem;
+}
+
+.container {
+  padding: 5rem 15rem 15rem 15rem;
+
+  & .desc__tittle {
+    font-size: 40px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+  }
+
+  & .desc__p1 {
+    font-size: 20px;
+  }
+  & .desc__p2 {
+    font-size: 16px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  &__all {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #eff1ef;
+    margin: 6px;
+    @media screen and (min-width: 700px) {
+      width: 49%;
+    }
+  }
+  &__tittle {
+    font-size: 28px;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    border-top: 0.3px solid black;
+  }
+  &--italic {
+    font-style: italic;
+    font-weight: bold;
+  }
+  &__p1 {
+    font-size: 16px;
+    padding: 2rem;
+    font-weight: bold;
+    @media screen and (min-width: 700px) {
+      width: 100%;
+    }
+  }
+}
+
+// Nav bar and footer
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10em;
+  background-color: #f8f9fa;
+
+  @media (mac-width: 700px) {
+    flex-direction: column;
+  }
+
+  .header_logo {
+    width: 10em;
+    height: 10em;
+    background-image: url("/img/logo.svg");
+    background-repeat: no-repeat;
+    margin-left: 15em;
+  }
+  .header_navigation {
+    margin-right: 15em;
+
+    @media (max-width: 700px) {
+      flex-direction: row;
+    }
+
+    .header_navigation--list {
+      text-decoration: none;
+      padding: 1rem;
+      font-size: 16px;
+    }
+  }
+
+  a {
+    color: #3f3f3f;
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-weight: bold;
+  }
+}
+
+footer {
+  display: flex;
+  height: 20em;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+
+  .footer-navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 30em;
+    margin-top: 6em;
+
+    a {
+      color: #147ecd;
+      font-size: 16px;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 1.7em;
+  }
+
+  p {
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 4em;
+  }
+
+  p > a {
+    color: #147ecd;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+}
