@@ -4,6 +4,7 @@
 
 html {
   font-family: "Roboto Condensed", sans-serif;
+  color: #3f3f3f;
 }
 
 body {
@@ -11,51 +12,122 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-size: 40px;
+  margin: 0.5em 0;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 32px;
+  margin: 0.5em 0;
+  font-weight: 100;
+}
+
 p {
   font-size: 16px;
+  margin-top: 0.5em;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
+  margin: 3em;
+
+  @media (min-width: 700px) {
+    margin: 0 15em;
+  }
 
   &__cofee {
     display: flex;
     flex-wrap: wrap;
-
-    &__espresso {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__filter-special {
-      display: flex;
-      align-items: space-between;
-
-      &__special {
-        display: flex;
-        flex-direction: column;
-      }
-
-      &__special {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-
-    &__iced {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__hot {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  .price {
-    display: flex;
     justify-content: space-between;
   }
+
+  &__non {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.coffee {
+  &__espresso {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+    width: 100%;
+
+    @media (min-width: 700px) {
+      width: 45%;
+    }
+  }
+
+  &__filter-special {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 5em;
+    width: 100%;
+    @media (min-width: 700px) {
+      width: 45%;
+    }
+  }
+
+  &__iced {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+    width: 100%;
+    @media (min-width: 700px) {
+      width: 45%;
+    }
+  }
+
+  &__hot {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+    width: 100%;
+    @media (min-width: 700px) {
+      width: 45%;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__special {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.non {
+  &__lemonade {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+    width: 100%;
+    @media (min-width: 700px) {
+      width: 45%;
+    }
+  }
+
+  &__water {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5em;
+    width: 100%;
+    @media (min-width: 700px) {
+      width: 45%;
+    }
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
 }
