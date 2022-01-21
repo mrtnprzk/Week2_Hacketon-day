@@ -1,3 +1,134 @@
-h1 {
-  color: red;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* header, logo +navigation*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10em;
+  background-color: #f8f9fa;
+
+  .header_logo {
+    width: 10em;
+    height: 10em;
+    background-image: url("/img/logo.svg");
+    margin-left: 20em;
+  }
+  .header_navigation {
+    margin-right: 20em;
+
+    .header_navigation--list {
+      text-decoration: none;
+      padding: 1rem;
+      font-size: 16px;
+    }
+  }
+}
+
+/*part with titles + main image*/
+
+.box-tittles-image {
+  margin-left: 20em;
+  margin-right: 20em;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 100;
+  }
+  h2 {
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 0;
+  }
+
+  .home-image {
+    background-image: url("/img/counter.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30em;
+  }
+}
+
+/* part with the main info under the image*/
+
+.box-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-right: 20em;
+  margin-left: 20em;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 100;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .opening-hours,
+  .book-table,
+  .address {
+    padding: 1em 5em 1em 0em;
+  }
+}
+
+/* map part*/
+
+.map {
+  margin-left: 20em;
+  margin-right: 20em;
+  height: 20em;
+
+  .box-map {
+    height: 20em;
+  }
+}
+
+/* footer*/
+
+footer {
+  display: flex;
+  height: 20em;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+
+  .footer-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 30em;
+    margin-top: 6em;
+
+    a {
+      color: #147ecd;
+      font-size: 16px;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: 1.7em;
+  }
+  p {
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 4em;
+  }
+
+  p > a {
+    color: #147ecd;
+  }
 }
